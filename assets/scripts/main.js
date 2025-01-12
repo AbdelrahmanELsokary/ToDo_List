@@ -16,9 +16,9 @@ btn.onclick = () => {
 
 them = document.getElementById("them");
 them.onclick = () => {
-  if (document.body.classList.contains("dark-mode")) {
-    document.body.classList.remove("dark-mode");
+  if (document.getElementById("dark").classList.contains("dark-mode")) {
+    document.getElementById("dark").classList.remove("dark-mode");
   } else {
-    document.body.classList.add("dark-mode");
+    document.getElementById("dark").classList.add("dark-mode");
   }
 };
