@@ -13,3 +13,12 @@ btn.onclick = () => {
   ol.innerHTML = text;
   input.value = "";
 };
+
+them = document.getElementById("them");
+them.onclick = () => {
+  if (document.body.classList.contains("dark-mode")) {
+    document.body.classList.remove("dark-mode");
+  } else {
+    document.body.classList.add("dark-mode");
+  }
+};
