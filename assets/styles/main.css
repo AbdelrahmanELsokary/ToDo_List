@@ -42,9 +42,9 @@ section .container .add_task {
   box-shadow: 0 0 9px 4px rgb(86, 86, 255);
   list-style-position: inside;
   border-radius: 7px;
-  padding: 20px;
+  padding: 10px;
 }
 section .container .add_task ol li {
   border-bottom: 1px solid rgba(6, 6, 64, 0.241);
-  padding-bottom: 7px;
+  padding: 10px;
 }

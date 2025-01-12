@@ -10,6 +10,6 @@ btn.onclick = () => {
   text += `
   <li>${input.value}</li>
   `;
-  document.getElementById("order_task").innerHTML = text;
+  ol.innerHTML = text;
   input.value = "";
 };
