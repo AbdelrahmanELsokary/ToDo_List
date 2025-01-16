@@ -1,4 +1,4 @@
-let text = localStorage.getItem('tasks') ;
+let text = localStorage.getItem('tasks');
 let input = document.getElementById('text');
 let btn = document.getElementById('add');
 let ol = document.getElementById('order_task');
@@ -19,7 +19,9 @@ them = document.getElementById('them');
 them.onclick = () => {
   if (document.getElementById('dark').classList.contains('dark-mode')) {
     document.getElementById('dark').classList.remove('dark-mode');
+    them.src = 'assets/icons/day-and-night.webp';
   } else {
     document.getElementById('dark').classList.add('dark-mode');
+    them.src = 'assets/icons/light.webp';
   }
 };

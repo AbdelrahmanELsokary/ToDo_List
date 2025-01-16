@@ -12,6 +12,7 @@ header .container nav{
   padding: 20px;
 }
 header .container nav img{
+  width: 40px;
   cursor: pointer;
 }
 body section.dark-mode {
