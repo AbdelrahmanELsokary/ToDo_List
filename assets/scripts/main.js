@@ -1,24 +1,25 @@
-let text = "";
-let input = document.getElementById("text");
-let btn = document.getElementById("add");
-let ol = document.getElementById("order_task");
+let text = localStorage.getItem('tasks') ;
+let input = document.getElementById('text');
+let btn = document.getElementById('add');
+let ol = document.getElementById('order_task');
 
 btn.onclick = () => {
-  if (input.value === "") {
+  if (input.value === '') {
     return;
   }
   text += `
   <li>${input.value}</li>
   `;
   ol.innerHTML = text;
-  input.value = "";
+  localStorage.setItem('tasks', text);
+  input.value = '';
 };
 
-them = document.getElementById("them");
+them = document.getElementById('them');
 them.onclick = () => {
-  if (document.getElementById("dark").classList.contains("dark-mode")) {
-    document.getElementById("dark").classList.remove("dark-mode");
+  if (document.getElementById('dark').classList.contains('dark-mode')) {
+    document.getElementById('dark').classList.remove('dark-mode');
   } else {
-    document.getElementById("dark").classList.add("dark-mode");
+    document.getElementById('dark').classList.add('dark-mode');
   }
 };
